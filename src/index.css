@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --darkBlue: #03045e;
+  --blue: #0077b6;
+  --lightBlue1: #00b4d8;
+  --lightBlue2: #90e0ef;
+  --lightestBlue: #caf0f8;
+}
+
+body {
+  background-color: var(--lightBlue2);
+}
+
+nav {
+  background-color: var(--darkBlue);
+}
+
+nav a {
+  color: var(--lightestBlue);
+}
+
+h1 {
+  color: var(--blue);
+}
+
+.about-me {
+  background-color: var(--lightBlue1);
+}
