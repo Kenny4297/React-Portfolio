@@ -1,7 +1,7 @@
 export function Resume() {
     return (
         <>
-            <h3><a href="/assets/Resume.pdf" download>Download my resume!</a></h3>
+            <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
             <br />
             <h2>Proficiencies:</h2>
             <ul>
