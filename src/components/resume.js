@@ -1,4 +1,9 @@
-export function Resume() {
+import {React, useEffect} from 'react';
+
+export default function Resume() {
+    useEffect(() => {
+        document.body.style.backgroundImage = "linear-gradient(to top, var(--lightBlue2), var(--lightBlue1)";
+    }, [])
     return (
         <>
             <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
