@@ -6,34 +6,51 @@ export default function Resume() {
     }, [])
     return (
         <>
-            <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
-            <br />
-            <h2>Proficiencies:</h2>
-            <ul>
-                <li>MongoDB</li>
-                <ul>
-                    <li>Mongoose </li>
-                </ul>
-                <li>SQL</li>
+        <div className='resume-section'>
+            <div className='resume-title'>
+                <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
+                <br />
+            
+            </div>
+            <div className="list-of-prof">
+                <div className='proficiencies'>
+                <h2>Proficiencies</h2>
+
                     <ul>
-                        <li>Sequelize ORM</li>
-                        <li>MySQL</li>
+                        <li>MongoDB</li>
+
+                        <li>Express.js</li>
+
+                        <li>SQL</li>
+
+                        <li>React</li>
+
+                        <li>Node.js</li>  
                     </ul>
-                <li>Express.js</li>
-                <ul>
-                    <li>Express Handlebars</li>                                       
-                </ul>
-                <li>React</li>
-                <li>Node.js</li>
-                <ul>
-                    <li>Inquirer</li>
-                </ul>
-                <li>Additional Frameworks</li>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>JQuery</li>
-                </ul>
-            </ul>
+                </div>
+
+                
+                <div className='proficiencies'>
+                    <h2>Additional Frameworks</h2>
+
+                    <ul>
+                        <li>Inquirer</li>
+                        
+                        <li>Bootstrap</li>
+                        
+                        <li>JQuery</li>
+
+                        <li>Mongoose </li>
+
+                        <li>Sequelize ORM</li>
+
+                        <li>MySQL</li>
+
+                        <li>Express Handlebars</li>                                      
+                    </ul>
+                </div>
+            </div>
+            </div>
         </>
     )
 }

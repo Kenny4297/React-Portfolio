@@ -19,7 +19,7 @@ export default function Portfolio() {
 
     return (
         <>
-            <h2 id="work">My Work</h2>
+            <h2>Favorite Projects</h2>
             <section className="work">
                 {/* Here we loop through the props located below this function.  */}
                 {workProps.map((individualWork, index) => (
@@ -27,8 +27,8 @@ export default function Portfolio() {
                     
                         <div key={index} className={`grid-item work-example-${index + 1}`}>
                             <a href={individualWork.link} target="_blank" rel="noreferrer">
-                                <h3>{individualWork.projectName}</h3>
-                                <p>{individualWork.projectTechnologies}</p>
+                                <h3 className='project-title'>{individualWork.projectName}</h3>
+                                <p className='project-technologies'>{individualWork.projectTechnologies}</p>
                             </a>  
                         </div>
                 ))}

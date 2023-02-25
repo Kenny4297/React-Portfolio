@@ -12,12 +12,11 @@ function App() {
     //setting up the Hook. 'currentPage' is a variable we can use to keep track
     //  'setCurrentPage' is a function we can use to update the state of the variable
     //   "aboutMe" is the default state. 
-    const [currentPage, setCurrentPage] = useState("");
+    const [currentPage, setCurrentPage] = useState("aboutMe");
 
     return (
         <div>
             <header>
-            <h1>Kedgard Cordero</h1>
                 <nav>
                     <ul>
                         <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/' onClick={() => {

@@ -34,7 +34,9 @@ nav {
 
 h1 {
   position: relative;
-  padding-top: 25px;
+  padding-top: 10px;
+  color: black;
+  text-align: center;
 }
 
 nav a {
@@ -59,8 +61,7 @@ nav ul li:hover {
 }
 
 .active {
-  color: red;
-  border: 2px solid green;
+  border-bottom: 2px solid green;
 }
 
 nav ul {
@@ -69,37 +70,57 @@ nav ul {
   width: 100%;
 }
 
-h1 {
-  color: var(--blue);
-}
-
 /* -----ABOUT ME------ */
-.about-me-section {
-  /* background-color: red; */
-}
-
 .about-me {
-  display: inline-flex;
-  align-items: center;
-  max-height: 400px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10vh;
 }
 
+.about-me-section {
+  /* align-items: center;
+  display: block;
+  color: var(--Blue);
+  margin: 5rem 15rem;
+  border: 2px solid red;
+  width: 100vh; */
+
+  max-width: 50%;
+  min-width: 320px;
+  /* margin: 2rem 2rem; */
+
+  border: 2px solid red;
+  text-align: center;
+}
 .about-me p {
-  align-items: center;
+  /* align-items: center;
+  min-width: 0vh; */
+  margin-top: 2rem;
 }
 
-.about-me {
-  background-color: var(--lightBlue1);
-}
-
-.about-me-section {
-  display: inline-flex;
-  color: var(--Blue)
-
+h2 {
+  text-align: center;
 }
 
 .profile-pic {
-  width: 20vh;
+  width: 35vh;
+  /* max-width: 40%; */
+  margin-top: 3.8rem;
+  margin-left: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-pic {
+    display: none;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    place-items: center;
+
+  }
 }
 
 /* -----PORTFOLIO ------ */
@@ -108,41 +129,67 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-title, .project-technologies {
+  text-align: center;
+}
+
+.work h3 {
+  color: white;
+}
+
+.work p {
+  font-weight: bold;
+  color: white
+}
+
+.work a {
+  color: var(--darkBlue);
+  text-decoration: none;
 }
 
 .work-example-1 {
   grid-row: 1;
   grid-column: 1 / 3;
   border: 2px solid red;
+  background-image: url('https://t3.ftcdn.net/jpg/02/34/44/16/360_F_234441670_C9KlCIyfp2l8tLKHrr4CNjctGz252bg5.jpg');
+  color: orange
+}
+
+.work-example-1 a {
+  background-color: black;
+  color: black;
 }
 
 .work-example-2 {
   grid-row: 2;
   grid-column: 1;
   border: 2px solid red;
-
+  background-image: url('https://png.pngtree.com/background/20210706/original/pngtree-business-technology-background-banner-design-picture-image_188904.jpg');
 }
 
 .work-example-3 {
   grid-row: 2;
   grid-column: 2;
   border: 2px solid red;
-
+  background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-blue-business-technology-g20-summit-banner-background-picture-image_1020721.jpg');
 }
 
 .work-example-4 {
   grid-row: 3;
   grid-column: 1;
   border: 2px solid red;
-
+  background-image: url('https://img.freepik.com/premium-vector/modern-blue-gold-abstract-banner-background_181182-20341.jpg');
 }
 
 .work-example-5 {
   grid-row: 3;
   grid-column: 2;
   border: 2px solid red;
-
+  background-image: url('https://img.freepik.com/premium-vector/technology-global-blue-wide-banner-design-background-abstract-3d-banner-design-with-dark-blue-technology-geometric-background-vector-illustration_181182-27936.jpg');
 }
 
 .work-example-6 {
@@ -151,7 +198,103 @@ h1 {
   border: 2px solid red;
 
 }
+/* ----CONTACT---- */
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-section label {
+  margin-bottom: 10px;
+}
+
+.contact-section input, .contact-section textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 30vh;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  background-color: var(--lightBlue2);
+}
+
+/* -----RESUME----- */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  /* border: 2px solid orange; */
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resume-section li {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 80%;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.resume-section li:hover {
+  transform: scale(1.05);
+}
+
+.proficiencies {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: inline;
+}
+
+.proficiencies ul {
+  height: 100%;
+}
+
+.list-of-prof {
+  display: flex;
+  /* border: 2px solid purple; */
+}
+
+.resume-title {
+  display: block;
+}
 
 /*-----FOOTER-------- */
 
@@ -160,7 +303,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border: 2px solid red;
-  position: absolute;
+  position: fixed;
   margin-bottom: 1px;
   bottom: 0;
   width: 100%;
