@@ -61,7 +61,7 @@ nav ul li:hover {
 }
 
 .active {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--lightestBlue);
 }
 
 nav ul {
@@ -80,13 +80,6 @@ nav ul {
 }
 
 .about-me-section {
-  /* align-items: center;
-  display: block;
-  color: var(--Blue);
-  margin: 5rem 15rem;
-  border: 2px solid red;
-  width: 100vh; */
-
   max-width: 50%;
   min-width: 320px;
   /* margin: 2rem 2rem; */
@@ -147,7 +140,7 @@ h2 {
 }
 
 .work a {
-  color: var(--darkBlue);
+  color: white;
   text-decoration: none;
 }
 
@@ -160,8 +153,7 @@ h2 {
 }
 
 .work-example-1 a {
-  background-color: black;
-  color: black;
+  color: white;
 }
 
 .work-example-2 {
