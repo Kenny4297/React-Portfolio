@@ -15,20 +15,16 @@ code {
 }
 
 :root {
-  --darkBlue: #03045e;
-  --blue: #0077b6;
-  --lightBlue1: #00b4d8;
-  --lightBlue2: #90e0ef;
-  --lightestBlue: #caf0f8;
+  --color-primary: #000000;
+  --color-secondary: #333333;
+  --color-tertiary: #666666;
+  --color-accent: #999999;
+  --color-highlight: #ffffff;
 }
 
-
-body {
-
-}
 
 nav {
-  background-color: var(--darkBlue);
+  background-color: var(--color-primary);
 }
 
 h1 {
@@ -39,7 +35,7 @@ h1 {
 }
 
 nav a {
-  color: var(--lightestBlue);
+  color: var(--color-highlight);
   text-decoration: none;
 }
 
@@ -60,7 +56,7 @@ nav ul li:hover {
 }
 
 .active {
-  border-bottom: 2px solid var(--lightestBlue);
+  border-bottom: 2px solid var(--color-highlight);
 }
 
 nav ul {
@@ -73,8 +69,11 @@ nav ul {
 .about-me {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom: 10vh;
+  color: var(--color-highlight);
+  font-size: 1.2rem;
 }
 
 .about-me-section {
@@ -116,6 +115,9 @@ h2 {
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
 }
 
 .project-title, .project-technologies {
@@ -139,7 +141,6 @@ h2 {
 .work-example-1 {
   grid-row: 1;
   grid-column: 1 / 3;
-  border: 2px solid red;
   background-image: url('https://t3.ftcdn.net/jpg/02/34/44/16/360_F_234441670_C9KlCIyfp2l8tLKHrr4CNjctGz252bg5.jpg');
   color: orange
 }
@@ -151,36 +152,30 @@ h2 {
 .work-example-2 {
   grid-row: 2;
   grid-column: 1;
-  border: 2px solid red;
   background-image: url('https://png.pngtree.com/background/20210706/original/pngtree-business-technology-background-banner-design-picture-image_188904.jpg');
 }
 
 .work-example-3 {
   grid-row: 2;
   grid-column: 2;
-  border: 2px solid red;
   background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-blue-business-technology-g20-summit-banner-background-picture-image_1020721.jpg');
 }
 
 .work-example-4 {
   grid-row: 3;
   grid-column: 1;
-  border: 2px solid red;
   background-image: url('https://img.freepik.com/premium-vector/modern-blue-gold-abstract-banner-background_181182-20341.jpg');
 }
 
 .work-example-5 {
   grid-row: 3;
   grid-column: 2;
-  border: 2px solid red;
   background-image: url('https://img.freepik.com/premium-vector/technology-global-blue-wide-banner-design-background-abstract-3d-banner-design-with-dark-blue-technology-geometric-background-vector-illustration_181182-27936.jpg');
 }
 
 .work-example-6 {
   grid-row: 3;
   grid-column: 3;
-  border: 2px solid red;
-
 }
 /* ----CONTACT---- */
 
@@ -192,8 +187,17 @@ h2 {
   margin-top: 40px;
 }
 
+.contact-section p {
+  color: white;
+}
+
+.contact-h2 {
+  color: white;
+}
+
 .contact-section label {
   margin-bottom: 10px;
+  color: white;
 }
 
 .contact-section input, .contact-section textarea {
@@ -207,7 +211,7 @@ h2 {
 
 .contact-section button {
   padding: 10px 20px;
-  background-color: var(--blue);
+  background-color: var(--color-secondary);
   color: white;
   border: none;
   border-radius: 4px;
@@ -217,7 +221,7 @@ h2 {
 .contact-section input:focus,
 .contact-section textarea:focus {
   outline: none;
-  background-color: var(--lightBlue2);
+  background-color: var(--color-tertiary);
 }
 
 /* -----RESUME----- */
@@ -248,7 +252,7 @@ h2 {
   padding: 0.5rem;
   margin: 0.5rem;
   width: 80%;
-  background-color: var(--blue);
+  background-color: var(--color-secondary);
   color: white;
   border-radius: 5px;
   text-align: center;

@@ -2,7 +2,7 @@ import { React, useEffect } from 'react';
 
 export default function Portfolio() {
     useEffect(() => {
-        document.body.style.backgroundImage = "linear-gradient(to bottom, var(--lightBlue2), var(--lightBlue1)";
+        document.body.style.backgroundImage = "linear-gradient(to bottom, var(--color-accent), var(--color-tertiary)";
     }, [])
 
     const workProps = [

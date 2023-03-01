@@ -2,7 +2,7 @@ import {React, useEffect} from 'react';
 
 export default function Resume() {
     useEffect(() => {
-        document.body.style.backgroundImage = "linear-gradient(to top, var(--lightBlue2), var(--lightBlue1)";
+        document.body.style.backgroundImage = "linear-gradient(to top, var(--color-tertiary), var(--color-accent)";
     }, [])
     return (
         <>

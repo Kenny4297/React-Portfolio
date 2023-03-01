@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function Contact() {
     useEffect(() => {
-        document.body.style.backgroundImage = "linear-gradient(to left, var(--lightBlue2), var(--lightBlue1)";
+        document.body.style.backgroundImage = "linear-gradient(to left, var(--color-accent), var(--color-tertiary)";
     }, [])
 
     //We want to keep track of the state in regards to our form fields.
@@ -46,7 +46,7 @@ export default function Contact() {
 
         //The 'onChange' specifies a function that is called whenever the user types into the input field. 
         <>
-        <h2>Contact me!</h2>
+        <h2 className='contact-h2'>Contact me!</h2>
             <form className="contact-section" onSubmit={formSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" name="name" value={userData.name} onChange={inputChange} required />
