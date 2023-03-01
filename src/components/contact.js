@@ -6,8 +6,9 @@ export default function Contact() {
     }, [])
 
     //We want to keep track of the state in regards to our form fields.
-    //Again for reviews: 'userData' is the variable we use to keep track of the state
+    //Again for review: 'userData' is the variable we use to keep track of the state
     // 'setUserData' is the function we use to change the state
+    //  The 'useState' here is setting the default. We obviously want the default to be an empty form field
     const [userData, setUserData] = useState({
         name: '',
         email: '',
@@ -18,21 +19,22 @@ export default function Contact() {
         event.preventDefault();
         if (event.target.checkValidity()) {
             alert('Email sent!');
-            //We need to call this function to clear the form and get it ready for the next submission. In other words, ee are resetting the form.
+            //We need to call this function to clear the form and get it ready for the next submission. In other words, we are resetting the form.
             setUserData({
                 name: '',
                 email: '',
                 message: ''
             })
         } else {
+            // The ".checkValidity" method will alert the user if they entered in an invalid email address.  
             alert('Sorry, please enter a correct email address!')
         }
     };
-
+    // The function that is responsible for any change in the form field
     const inputChange = (event) => {
         setUserData({
             ...userData,
-            //Notice that "even.target.name" is updated to the 'name' field below, and the .value is what ever the user typed into that filed. This keeps this flexible, in case we had 10 form fields
+            //Notice that "even.target.name" is updated to the 'name' field below, and the .value is what ever the user typed into that filed. This keeps this flexible, in case we had 10 form fields.
             [event.target.name]: event.target.value
         })
     }

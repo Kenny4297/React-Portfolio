@@ -23,10 +23,15 @@ export default function Portfolio() {
             <section className="work">
                 {/* Here we loop through the props located below this function.  */}
                 {workProps.map((individualWork, index) => (
-                    // We include the index as a second parameter to know what specific project we are on for CSS purposes
+                    // We include the index (above) as a second parameter to know what specific project we are on for CSS purposes
+
+                        //We need to have the "key-{index}" here. It's a React thing, and it needs to keep track of multiple components when you render them out. 
                         <div key={index} className={`grid-item work-example-${index + 1}`}>
+                            
                             <h3 className='project-technologies'><a href={individualWork.githubLink} target="_blank" rel="noreferrer">{individualWork.projectName}</a></h3>
                             <p className='project-technologies'>{individualWork.projectTechnologies}</p>
+
+                            {/* A cool "if then" in React. IF the left hand side before the '&&' is correct, the right part will render */}
                             {index === 1 && <p className='project-technologies'><a href={individualWork.deploymentLink} target="_blank" rel="noreferrer">Deployment</a></p>}
                         </div>
                 ))}

@@ -19,6 +19,7 @@ function App() {
             <header>
                 <nav>
                     <ul>
+                        {/* We want to have the nav element be underlined when the user is on a certain page. We use the 'useState' hook to do this, since state is being changed! */}
                         <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/' onClick={() => {
                             setCurrentPage('aboutMe')}}>About Me</Link></li>
 

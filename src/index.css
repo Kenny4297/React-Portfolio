@@ -6,9 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* width: 100vw; */
   height: 100vh;
-  border: 2px solid red;
 }
 
 code {
@@ -24,8 +22,9 @@ code {
   --lightestBlue: #caf0f8;
 }
 
+
 body {
-  /* background-image: linear-gradient(to right, red 50%, blue 50%); */
+
 }
 
 nav {
@@ -73,7 +72,6 @@ nav ul {
 /* -----ABOUT ME------ */
 .about-me {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   position: relative;
   margin-bottom: 10vh;
@@ -82,14 +80,9 @@ nav ul {
 .about-me-section {
   max-width: 50%;
   min-width: 320px;
-  /* margin: 2rem 2rem; */
-
-  border: 2px solid red;
   text-align: center;
 }
 .about-me p {
-  /* align-items: center;
-  min-width: 0vh; */
   margin-top: 2rem;
 }
 
@@ -99,7 +92,6 @@ h2 {
 
 .profile-pic {
   width: 35vh;
-  /* max-width: 40%; */
   margin-top: 3.8rem;
   margin-left: .5rem;
 }
@@ -271,7 +263,6 @@ h2 {
 .proficiencies {
   height: 100%;
   width: 100%;
-  /* border: 2px solid green; */
   display: inline;
 }
 
@@ -281,7 +272,6 @@ h2 {
 
 .list-of-prof {
   display: flex;
-  /* border: 2px solid purple; */
 }
 
 .resume-title {
@@ -294,10 +284,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
   position: fixed;
-  margin-bottom: 1px;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
 }
 

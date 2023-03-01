@@ -8,6 +8,7 @@ export default function Resume() {
         <>
         <div className='resume-section'>
             <div className='resume-title'>
+                {/* Notice how the public folder is the current directory when importing from other files! */}
                 <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
                 <br />
             
