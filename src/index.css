@@ -224,6 +224,10 @@ h2 {
   background-color: var(--color-tertiary);
 }
 
+.error-message {
+  color: orange;
+}
+
 /* -----RESUME----- */
 .resume-section {
   display: flex;

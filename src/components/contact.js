@@ -15,6 +15,12 @@ export default function Contact() {
         message: ''
     })
 
+    //We need to use another hook to keep track of the "onMouseLeave" event handler. This is also available in Vanilla JS as well.
+    const [nameMessageError, setNameMessageError] = useState(false);
+    const [emailMessageError, setEmailMessageError] = useState(false);
+    const [messageMessageError, setMessageMessageError] = useState(false);
+
+
     const formSubmit = (event) => {
         event.preventDefault();
         if (event.target.checkValidity()) {
@@ -37,6 +43,31 @@ export default function Contact() {
             //Notice that "even.target.name" is updated to the 'name' field below, and the .value is what ever the user typed into that filed. This keeps this flexible, in case we had 10 form fields.
             [event.target.name]: event.target.value
         })
+    };
+
+    //We create a function that will handle the notification to the user when their cursor moves away from the input field
+    const handleMouseLeaveName = (event) => {
+        if (event.target.value === '') {
+            setNameMessageError(true)
+        } else {
+            setNameMessageError(false)
+        }
+    }
+
+    const handleMouseLeaveEmail = (event) => {
+        if (event.target.value === '') {
+            setEmailMessageError(true)
+        } else {
+            setEmailMessageError(false)
+        }
+    }
+
+    const handleMouseLeaveMessage = (event) => {
+        if (event.target.value === '') {
+            setMessageMessageError(true)
+        } else {
+            setMessageMessageError(false)
+        }
     }
 
     return (
@@ -49,13 +80,17 @@ export default function Contact() {
         <h2 className='contact-h2'>Contact me!</h2>
             <form className="contact-section" onSubmit={formSubmit}>
                 <label htmlFor="name">Name:</label>
-                <input type="text" name="name" value={userData.name} onChange={inputChange} required />
+                <input type="text" name="name" value={userData.name} onChange={inputChange} required onMouseLeave={handleMouseLeaveName} />
+                {/* This checks the state of the 'onMouseLeave' and presents a message to the user if nothing is entered in the field and they move their mouse!  */}
+                {nameMessageError && <span className="error-message">This field is required!</span>}
 
                 <label htmlFor="email">Email:</label>
-                <input type="email" name="email" value={userData.email} onChange={inputChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                <input type="email" name="email" value={userData.email} onChange={inputChange} required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onMouseLeave={handleMouseLeaveEmail} />
+                {emailMessageError && <span className="error-message">This field is required!</span>}
 
                 <label htmlFor="message">Message:</label>
-                <textarea type='text' name="message" value={userData.message} onChange={inputChange} required></textarea>
+                <textarea type='text' name="message" value={userData.message} onChange={inputChange} required onMouseLeave={handleMouseLeaveMessage}></textarea>
+                {messageMessageError && <span className="error-message">This field is required!</span>}
 
                 <button type="submit">Submit</button>
             </form>
