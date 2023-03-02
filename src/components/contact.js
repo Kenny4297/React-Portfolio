@@ -15,7 +15,7 @@ export default function Contact() {
         message: ''
     })
 
-    //We need to use another hook to keep track of the "onMouseLeave" event handler. This is also available in Vanilla JS as well.
+    //We need to use another hook to keep track of the "onMouseLeave" event handler. We also need to have three separate hooks here, or when one of the input fields is set to false (when the message to the user displays) they all will display to the user, and we don't want that here.
     const [nameMessageError, setNameMessageError] = useState(false);
     const [emailMessageError, setEmailMessageError] = useState(false);
     const [messageMessageError, setMessageMessageError] = useState(false);
@@ -45,7 +45,7 @@ export default function Contact() {
         })
     };
 
-    //We create a function that will handle the notification to the user when their cursor moves away from the input field
+    //We create a function that will handle the notification to the user when their cursor moves away from the input field. Similar to where we created the individual hooks, we need separate functions to keep track of their particular state.
     const handleMouseLeaveName = (event) => {
         if (event.target.value === '') {
             setNameMessageError(true)
