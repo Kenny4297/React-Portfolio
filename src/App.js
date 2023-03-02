@@ -59,10 +59,10 @@ function App() {
                 <nav>
                     <ul>
                         {/* We want to have the nav element be underlined when the user is on a certain page. We use the 'useState' hook to do this, since state is being changed! */}
-                        <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/' onClick={() => {
+                        <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/React-Portfolio' onClick={() => {
                             setCurrentPage('aboutMe')}}>About Me</Link></li>
 
-                        <li className={currentPage === 'portfolio' ? 'active' : ''}><Link to="/portfolio" onClick={() => {
+                        <li className={currentPage === 'portfolio' ? 'active' : ''}><Link to="/React-Portfolio/portfolio" onClick={() => {
                             setCurrentPage('portfolio')}}>Portfolio</Link></li>
 
                         <li className={currentPage === 'contact' ? 'active' : ''}><Link to="/contact" onClick={() => {
@@ -76,9 +76,9 @@ function App() {
 
             {/* Don't forget that we need to add <BrowserRouter> to the index.js! Otherwise you will not get errors, but nothing will render... */}
             <Routes>
-                <Route path='/' element={<AboutMe />} />
-                <Route path='/aboutMe' element={<AboutMe />}/>
-                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/React-Portfolio' element={<AboutMe />} />
+                <Route path='/React-Portfolio/aboutMe' element={<AboutMe />}/>
+                <Route path='/React-Portfolio/portfolio' element={<Portfolio />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/resume' element={<Resume />} />
             </Routes>

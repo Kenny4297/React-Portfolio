@@ -1,9 +1,12 @@
 import React, {useEffect} from 'react';
+import Prof from '../images/Prof.jpg'
 
 export default function AboutMe() {
     //I am using the 'useEffect' hook to change the background color of each page when the user visits the page
+
+    document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
     useEffect(() => {
-        document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
+        console.log("loaded")
     }, [])
     
     return (
@@ -20,7 +23,7 @@ export default function AboutMe() {
 
             <div>
                 <figure>
-                    <img src="/assets/Prof.jpg" className="profile-pic" alt="A fairly decent man, Ked"/>
+                    <img src={Prof} className="profile-pic" alt="A fairly decent man, Ked"/>
                 </figure>
             </div>
         </div>
