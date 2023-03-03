@@ -10,7 +10,7 @@
   * [Licenses](#licenses)
   
   ### Description
-  My personal portfolio! This was create using React and CSS. 
+  My personal portfolio! This was created using React and CSS. 
 
   ### Installation
   Visit this site:
