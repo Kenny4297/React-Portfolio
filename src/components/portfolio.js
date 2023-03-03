@@ -6,7 +6,7 @@ export default function Portfolio() {
     }, [])
 
     const workProps = [
-        { projectName: "Be Tethical (GitHub)", githubLink: 'https://github.com/Kenny4297/Be-Tethical' },
+        { projectName: "Be Tethical (GitHub)", githubLink: 'https://github.com/Kenny4297/Be-Tethical', deploymentLink: "https://be-tethical-production.up.railway.app/" },
     
         { projectName: "Note Taker App (GitHub)", githubLink: 'https://github.com/Kenny4297/Taking-Some-Notes', deploymentLink: "https://zealous-wound-production.up.railway.app/" },
     
@@ -14,7 +14,7 @@ export default function Portfolio() {
     
         { projectName: "Employee Tracker (GitHub)", githubLink: "https://github.com/Kenny4297/Track-that-Employee"},
     
-        { projectName: "Weather Dashboard (GitHub)", githubLink: "https://kenny4297.github.io/Keds-Wicked-Weather-WApp/", deploymentLink: ""}
+        { projectName: "Weather Dashboard (GitHub)", githubLink: "https://kenny4297.github.io/Keds-Wicked-Weather-WApp/", deploymentLink: "https://kenny4297.github.io/Weather-App-API/"}
     ];
 
     return (
@@ -32,7 +32,7 @@ export default function Portfolio() {
                             <p className='project-technologies'>{individualWork.projectTechnologies}</p>
 
                             {/* A cool "if then" in React. IF the left hand side before the '&&' is correct, the right part will render */}
-                            {index === 1 && <p className='project-technologies'><a href={individualWork.deploymentLink} target="_blank" rel="noreferrer">Deployment</a></p>}
+                            {individualWork.deploymentLink && <p className='project-technologies'><a href={individualWork.deploymentLink} target="_blank" rel="noreferrer">Deployment</a></p>}
                         </div>
                 ))}
                 {/* Notice how this section closing tag is outside the map! We are only mapping through the specific work section, not the entire section itself */}
