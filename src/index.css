@@ -93,6 +93,8 @@ h2 {
   width: 35vh;
   margin-top: 3.8rem;
   margin-left: .5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1000px) {

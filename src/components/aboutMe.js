@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Prof from '../images/Prof.jpg'
+import ProfNoBack from '../images/ProfNoBack.png'
 
 export default function AboutMe() {
     //I am using the 'useEffect' hook to change the background color of each page when the user visits the page
@@ -23,7 +23,7 @@ export default function AboutMe() {
 
             <div>
                 <figure>
-                    <img src={Prof} className="profile-pic" alt="A fairly decent man, Ked"/>
+                    <img src={ProfNoBack} className="profile-pic" alt="A fairly decent man, Ked"/>
                 </figure>
             </div>
         </div>
