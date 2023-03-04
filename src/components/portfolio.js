@@ -8,13 +8,13 @@ export default function Portfolio() {
     const workProps = [
         { projectName: "Be Tethical (GitHub)", githubLink: 'https://github.com/Kenny4297/Be-Tethical', deploymentLink: "https://be-tethical-production.up.railway.app/" },
     
-        { projectName: "Note Taker App (GitHub)", githubLink: 'https://github.com/Kenny4297/Taking-Some-Notes', deploymentLink: "https://zealous-wound-production.up.railway.app/" },
+        { projectName: "Note Taker App (GitHub)", githubLink: 'https://github.com/Kenny4297/Note-Taker', deploymentLink: "https://zealous-wound-production.up.railway.app/" },
     
         { projectName: "E-Commerce (GitHub)", githubLink: "https://github.com/Kenny4297/Electronic-Commerse-DB"},
     
-        { projectName: "Employee Tracker (GitHub)", githubLink: "https://github.com/Kenny4297/Track-that-Employee"},
+        { projectName: "Employee Tracker (GitHub)", githubLink: "https://github.com/Kenny4297/Employee-Tracker"},
     
-        { projectName: "Weather Dashboard (GitHub)", githubLink: "https://kenny4297.github.io/Keds-Wicked-Weather-WApp/", deploymentLink: "https://kenny4297.github.io/Weather-App-API/"}
+        { projectName: "Weather Dashboard (GitHub)", githubLink: "https://github.com/Kenny4297/Weather-App-API", deploymentLink: "https://kenny4297.github.io/Weather-App-API/"}
     ];
 
     return (
