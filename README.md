@@ -8,6 +8,8 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Licenses](#licenses)
+  * [Questions](#questions)
+  * [Deployment](#deployment)
   
   ### Description
   My personal portfolio! This was created using React and CSS. 
@@ -20,3 +22,6 @@
 
   ### Questions
   * Any questions? Visit the github repository here! https://github.com/Kenny4297/React-Portfolio
+
+  ### Deployment
+  Visit the deployed site here! https://kenny4297.github.io/React-Portfolio/
