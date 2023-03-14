@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.68f66777.css",
-    "main.js": "/React-Portfolio/static/js/main.401d83f0.js",
+    "main.css": "/React-Portfolio/static/css/main.5c879c72.css",
+    "main.js": "/React-Portfolio/static/js/main.099bc954.js",
     "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/ProfNoBack.png": "/React-Portfolio/static/media/ProfNoBack.d99c03c66d03a600ef5f.png",
     "static/media/NoteTakerBanner.png": "/React-Portfolio/static/media/NoteTakerBanner.30ab9c2083f877592d40.png",
@@ -9,12 +9,12 @@
     "static/media/GetTethicalBanner2.png": "/React-Portfolio/static/media/GetTethicalBanner2.0abbe50b501f2e17c63d.png",
     "static/media/GithubIcon.png": "/React-Portfolio/static/media/GithubIcon.c8007a9fb185cb152ee6.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.68f66777.css.map": "/React-Portfolio/static/css/main.68f66777.css.map",
-    "main.401d83f0.js.map": "/React-Portfolio/static/js/main.401d83f0.js.map",
+    "main.5c879c72.css.map": "/React-Portfolio/static/css/main.5c879c72.css.map",
+    "main.099bc954.js.map": "/React-Portfolio/static/js/main.099bc954.js.map",
     "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68f66777.css",
-    "static/js/main.401d83f0.js"
+    "static/css/main.5c879c72.css",
+    "static/js/main.099bc954.js"
   ]
 }
