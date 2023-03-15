@@ -80,9 +80,6 @@ nav ul {
   min-width: 320px;
   text-align: center;
 }
-/* .about-me p {
-  margin-top: 2rem;
-} */
 
 h2 {
   text-align: center;
@@ -190,14 +187,6 @@ h2 {
   margin-top: 40px;
 }
 
-/* .contact-section p {
-  color: white;
-} */
-
-/* .contact-h2 {
-  color: white;
-} */
-
 .contact-section label {
   margin-bottom: 10px;
   color: white;
@@ -206,7 +195,7 @@ h2 {
 .contact-section input, .contact-section textarea {
   padding: 10px;
   margin-bottom: 20px;
-  width: 50vh;
+  width: 30vw;
   box-sizing: border-box;
   border-radius: 5px;
   border: none;
@@ -280,20 +269,13 @@ h2 {
   display: flex;
 }
 
-/* .resume-title {
-  display: block;
-} */
-
 /*-----FOOTER-------- */
 
 .footer {
-  display: flex;
-  justify-content: flex-start;
-  /* float: right; */
   position: fixed;
   left: 20px;
   bottom: 10px;
-  width: 100%;
+  width: 20%;
 }
 
 .github-logo {
