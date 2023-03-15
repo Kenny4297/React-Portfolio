@@ -7,16 +7,15 @@ export default function Resume() {
     return (
         <>
         <div className='resume-section'>
-            <div className='resume-title'>
+            <div style={{display: "block"}}>
                 {/* Notice how the public folder is the current directory when importing from other files! */}
                 <h3><a href="/assets/ResumePDF.pdf" download>Download my resume!</a></h3>
                 <br />
             
             </div>
-            <div className="list-of-prof">
+            <div style={{display: "flex"}}>
                 <div className='proficiencies'>
                 <h2>Proficiencies</h2>
-
                     <ul>
                         <li>MongoDB</li>
 
@@ -35,11 +34,9 @@ export default function Resume() {
                     <h2>Additional Frameworks</h2>
 
                     <ul>
-                        <li>Inquirer</li>
-                        
+                        <li>TensorFlow.js</li>
+
                         <li>Bootstrap</li>
-                        
-                        <li>JQuery</li>
 
                         <li>Mongoose </li>
 
@@ -47,7 +44,7 @@ export default function Resume() {
 
                         <li>MySQL</li>
 
-                        <li>Express Handlebars</li>                                      
+                        <li>Express Handlebars</li>                                   
                     </ul>
                 </div>
             </div>
