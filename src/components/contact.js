@@ -51,7 +51,7 @@ export default function Contact() {
             <textarea name="message" rows="10" cols="20" />
 
             {/* Notice that the input field has a built in attribute. This is why it works */}
-            <input className="contact-section" type="submit" value="Send" onClick={(e) => {sendEmail(e); handleDisable()}} disabled={isDisabled} />
+            <input className="contact-section" style={{cursor: 'pointer'}}type="submit" value="Send" onClick={(e) => {sendEmail(e); handleDisable()}} disabled={isDisabled} />
         </form>
         </>
     );
