@@ -1,8 +1,9 @@
 import {React, useEffect} from 'react';
 
 export default function Resume() {
+    document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
     useEffect(() => {
-        document.body.style.backgroundImage = "linear-gradient(to bottom, var(--color-accent), var(--color-tertiary)";
+        console.log("loaded")
     }, [])
     return (
         <div style={{height: "auto", paddingBottom: "100px"}}>

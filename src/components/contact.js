@@ -1,7 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
+    useEffect(() => {
+        console.log("loaded")
+    }, [])
     const form = useRef();
 
     //We need state to keep track of the state of the disabled button
