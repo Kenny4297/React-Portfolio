@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import pawPrints from '../images/pawPrints.png';
-import beThethical from '../images/beTethicalUpdated.png';
+import beThethical from '../images/BeTethicalUpdated.png';
 import weatherApp from '../images/weatherAppUpdated.png';
 
 export default function Portfolio() {
