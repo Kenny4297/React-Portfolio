@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.5c879c72.css",
-    "main.js": "/React-Portfolio/static/js/main.099bc954.js",
+    "main.css": "/React-Portfolio/static/css/main.9a6ce93e.css",
+    "main.js": "/React-Portfolio/static/js/main.4c48ed94.js",
     "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/pawPrints.png": "/React-Portfolio/static/media/pawPrints.b74edf0315b8bd312791.png",
+    "static/media/weatherAppUpdated.png": "/React-Portfolio/static/media/weatherAppUpdated.b5b4abe29e6a0e1782e1.png",
     "static/media/ProfNoBack.png": "/React-Portfolio/static/media/ProfNoBack.d99c03c66d03a600ef5f.png",
-    "static/media/NoteTakerBanner.png": "/React-Portfolio/static/media/NoteTakerBanner.30ab9c2083f877592d40.png",
-    "static/media/weatherDashboard3.png": "/React-Portfolio/static/media/weatherDashboard3.bd0c39bc29473694f718.png",
-    "static/media/GetTethicalBanner2.png": "/React-Portfolio/static/media/GetTethicalBanner2.0abbe50b501f2e17c63d.png",
+    "static/media/BeTethicalUpdated.png": "/React-Portfolio/static/media/BeTethicalUpdated.d231e1d5c69d32be60f1.png",
     "static/media/GithubIcon.png": "/React-Portfolio/static/media/GithubIcon.c8007a9fb185cb152ee6.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.5c879c72.css.map": "/React-Portfolio/static/css/main.5c879c72.css.map",
-    "main.099bc954.js.map": "/React-Portfolio/static/js/main.099bc954.js.map",
+    "main.9a6ce93e.css.map": "/React-Portfolio/static/css/main.9a6ce93e.css.map",
+    "main.4c48ed94.js.map": "/React-Portfolio/static/js/main.4c48ed94.js.map",
     "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c879c72.css",
-    "static/js/main.099bc954.js"
+    "static/css/main.9a6ce93e.css",
+    "static/js/main.4c48ed94.js"
   ]
 }
