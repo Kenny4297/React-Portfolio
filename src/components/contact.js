@@ -1,25 +1,31 @@
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import { successToast } from './customToast';
+import { ToastContainer } from 'react-toastify';
 
 export default function Contact() {
     document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
     useEffect(() => {
         console.log("loaded")
     }, [])
+
     const form = useRef();
+
+    //The toast that lets the user know that the email as been sent!
+    const showSuccessToast = () => {
+        successToast('Email has been sent! You must wait 1 minute before sending another email!');
+      };
 
     //We need state to keep track of the state of the disabled button
     const [isDisabled, setIsDisabled] = useState(false);
 
     const handleDisable = () => {
         //Here we check to see if the state of the button is disabled. If it is, then we disable it for 5 minuetes
-        if (isDisabled) {
-            console.log("Button is disabled")
-        } else {
+        if (!isDisabled) {
             setIsDisabled(true)
             setTimeout(() => {
                 setIsDisabled(false);
-            }, 5 * 60 * 1000);
+            }, 60000);
         }
     }
 
@@ -29,12 +35,10 @@ export default function Contact() {
 
         console.log("test for the button")
 
-        //Handling the disabled logic
-        handleDisable();
-
         emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
         .then((result) => {
             console.log(result.text);
+            showSuccessToast();
             form.current.reset()
         }, (error) => {
             console.log(error.text);
@@ -43,6 +47,18 @@ export default function Contact() {
 
     return (
         <>
+        <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+        />
         <h2 style={{color: "white"}}>Contact me! (This really works!)</h2>
         <form className="contact-section" ref={form}>
             <label style={{color: "white"}}>Name</label>
