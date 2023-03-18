@@ -1,4 +1,5 @@
 import {React, useEffect} from 'react';
+import ResumePDF from '../assets/Resume.pdf'
 
 export default function Resume() {
     document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
@@ -10,7 +11,7 @@ export default function Resume() {
             <div className='resume-section'>
                 <div style={{display: "block"}}>
                     {/* Notice how the public folder is the current directory when importing from other files! */}
-                    <h3><a href="/assets/Resume.pdf" download>Download my resume!</a></h3>
+                    <h3><a href={ResumePDF} download>Download my resume!</a></h3>
                     <br />
                 
                 </div>
