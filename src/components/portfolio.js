@@ -2,6 +2,8 @@ import { React, useEffect } from 'react';
 import pawPrints from '../images/pawPrints.png';
 import beThethical from '../images/BeTethicalUpdated.png';
 import weatherApp from '../images/weatherAppUpdated.png';
+import Zoom from 'react-reveal/Zoom'
+
 
 export default function Portfolio() {
     document.body.style.backgroundImage = "linear-gradient(to left, var(--color-accent), var(--color-tertiary)";
@@ -10,7 +12,7 @@ export default function Portfolio() {
     }, [])
 
     const workProps = [
-        { projectImage: pawPrints, projectName: "Paw Prints", githubLink: 'https://github.com/4therealm/pet-finder-app', deploymentLink: "https://pet-finder-application.herokuapp.com/", projectDescription: "A 'find your lost pet' application that uses machine learning image recognition, SMS services, and geolocation to provide the most accurate information to nervous owners of lost pets.", projectResponsibilities: "Responsible for uploading images and machine learning image recognition." },
+        { projectImage: pawPrints, projectName: "Paw Prints", githubLink: 'https://github.com/4therealm/pet-finder-app', deploymentLink: "https://pet-finder-application.herokuapp.com/", projectDescription: "A group-project 'find your lost pet' application that uses machine learning image recognition, SMS services, and geolocation to provide the most accurate information to nervous owners of lost pets. Responsible for uploading images and machine learning image recognition."},
         
         { projectImage: beThethical, projectName: "Be Tethical", githubLink: 'https://github.com/Kenny4297/Be-Tethical', deploymentLink: "https://be-tethical-production.up.railway.app/", projectDescription: "A fun CMS that allows users to post their thoughts on anything video game related, and comment on others posts." },
     
@@ -19,6 +21,7 @@ export default function Portfolio() {
 
     return (
         <>
+        <Zoom>
             <h2>Favorite Projects</h2>
             <section  style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div style={{textAlign: 'center', border: '2ps solid red'}}>
@@ -34,7 +37,7 @@ export default function Portfolio() {
                             </div>
 
                             <div>
-                                <p style={{width: '50vw'}}>{individualWork.projectDescription}</p>
+                                <p style={{width: '50vw', color: '#ADD8E6', fontSize: "1.2rem"}}>{individualWork.projectDescription}</p>
 
                                 {individualWork.projectResponsibilities && <p>{individualWork.projectResponsibilities}</p>}
 
@@ -46,6 +49,7 @@ export default function Portfolio() {
                     ))}
                 </div>
             </section>
+            </Zoom>
         </>
     )
 };
