@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import ProfNoBack from '../images/ProfNoBack.png';
-import Fade from 'react-reveal/Fade';
-import LightSpeed from 'react-reveal/LightSpeed';
 import Bounce  from 'react-reveal/Bounce'
 
 
