@@ -29,7 +29,7 @@ export default function Portfolio() {
                         //We need to have the "key-{index}" here. It's a React thing, and it needs to keep track of multiple components when you render them out. 
                         <div className="box-shadow" style={{border: "6px dashed #4d4d4d", padding: '0px 20px',marginBottom: "30px"}} key={index}>
                             <div>
-                                <h3 style={{textAlign: 'center', color:'white'}}>{individualWork.projectName}</h3>
+                                <h3 style={{textAlign: 'center', color:'white', textDecoration: 'underline'}}>{individualWork.projectName}</h3>
                                 <img style={{width: '40vw'}} src={individualWork.projectImage} alt={individualWork.projectDescription}/>
                             </div>
 
