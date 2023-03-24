@@ -1,5 +1,6 @@
 import {React, useEffect} from 'react';
 import ResumePDF from '../assets/Resume.pdf'
+import Zoom from 'react-reveal/Zoom'
 
 export default function Resume() {
     document.body.style.backgroundImage = "linear-gradient(to right, var(--color-accent), var(--color-tertiary)";
@@ -8,6 +9,7 @@ export default function Resume() {
     }, [])
     return (
         <div style={{height: "auto", paddingBottom: "100px"}}>
+            <Zoom>
             <div className='resume-section'>
                 <div style={{display: "block"}}>
                     {/* Notice how the public folder is the current directory when importing from other files! */}
@@ -51,6 +53,7 @@ export default function Resume() {
                     </div>
                 </div>
                 </div>
+                </Zoom>
         </div>
     )
 }
