@@ -7,6 +7,7 @@ import Resume from './components/resume';
 import Footer from './components/footer';
 import './index.css';
 import React, {useState, useEffect} from 'react';
+import Fade from 'react-reveal/Fade';
 
 function App() {
     //setting up the Hook. 'currentPage' is a variable we can use to keep track
@@ -52,26 +53,28 @@ function App() {
         }
         //We need to continue to update the location and local storage
     }, [location, setCurrentPage]);
-
+    
     return (
         <div>
             <header>
-                <nav>
-                    <ul>
-                        {/* We want to have the nav element be underlined when the user is on a certain page. We use the 'useState' hook to do this, since state is being changed! */}
-                        <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/React-Portfolio' onClick={() => {
-                            setCurrentPage('aboutMe')}}>About Me</Link></li>
+                <Fade top>
+                    <nav>
+                        <ul>
+                            {/* We want to have the nav element be underlined when the user is on a certain page. We use the 'useState' hook to do this, since state is being changed! */}
+                            <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/React-Portfolio' onClick={() => {
+                                setCurrentPage('aboutMe')}}>About Me</Link></li>
 
-                        <li className={currentPage === 'portfolio' ? 'active' : ''}><Link to="/React-Portfolio/portfolio" onClick={() => {
-                            setCurrentPage('portfolio')}}>Portfolio</Link></li>
+                            <li className={currentPage === 'portfolio' ? 'active' : ''}><Link to="/React-Portfolio/portfolio" onClick={() => {
+                                setCurrentPage('portfolio')}}>Portfolio</Link></li>
 
-                        <li className={currentPage === 'contact' ? 'active' : ''}><Link to="/contact" onClick={() => {
-                            setCurrentPage('contact')}}>Contact</Link></li>
+                            <li className={currentPage === 'contact' ? 'active' : ''}><Link to="/contact" onClick={() => {
+                                setCurrentPage('contact')}}>Contact</Link></li>
 
-                        <li className={currentPage === 'resume' ? 'active' : ''}><Link to="/resume" onClick={() => {
-                            setCurrentPage('resume')}}>Resume</Link></li>
-                    </ul>
-            </nav>
+                            <li className={currentPage === 'resume' ? 'active' : ''}><Link to="/resume" onClick={() => {
+                                setCurrentPage('resume')}}>Resume</Link></li>
+                        </ul>
+                    </nav>
+                </Fade>
             </header>
 
             {/* Don't forget that we need to add <BrowserRouter> to the index.js! Otherwise you will not get errors, but nothing will render... */}
