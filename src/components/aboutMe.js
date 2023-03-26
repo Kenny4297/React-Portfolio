@@ -18,7 +18,7 @@ export default function AboutMe() {
                 <Bounce right>
                     <h2 style={{fontFamily: "'Edu NSW ACT Foundation', cursive", fontSize: "2.5rem"}}>Hi, I'm Kedgard Cordero</h2>
 
-                    <p style={{marginTop: "2rem", fontFamily: "'Space Grotesk', sans-serif"}}>Self-taught MERN & machine learning web developer with a passion for creativity! I enjoy helping others achieve their dreams by creating the best possible content!  <br /><br />
+                    <p style={{marginTop: "2rem", fontFamily: "'Space Grotesk', sans-serif"}}>Self-taught Software Developer with a passion for creativity! I enjoy helping others achieve their dreams by creating the best possible content!  <br /><br />
                     I absolutely love collaborating with others towards an end goal, while watching a seemingly impossible project come to fruition.</p> 
 
                     <h2 style={{textAlign: "center", fontFamily: "'Alkatra', cursive"}}>Let's create something</h2>
