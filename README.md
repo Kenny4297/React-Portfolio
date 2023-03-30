@@ -13,8 +13,6 @@
 ### Description
 My personal portfolio! This was created using React and CSS. I used Email.js to allow the user to directly send me emails, and React-toastify to let the user know the email has been sent, and that they have to wait a minute before they send me another.
 
-
-
 ### Licenses
 MIT
 
