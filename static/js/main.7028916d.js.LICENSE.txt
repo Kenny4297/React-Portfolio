@@ -73,4 +73,6 @@
 
 //! Here we update the current page by calling the 'setCurrentPage' function! You can have hooks inside hooks!
 
+//! Old version
+
 //! Remember! This argument should be used when you want this particular item to be re-run whenever this object changes. We want this since we are keep track of the location!
