@@ -31,10 +31,12 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        console.log("test for the button")
-
-        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        )
         .then((result) => {
             console.log(result.text);
             showSuccessToast();
@@ -42,7 +44,28 @@ export default function Contact() {
         }, (error) => {
             console.log(error.text);
         });
+    
+        // Clear the input fields after the email is sent
+        form.current.elements.from_name.value = "";
+        form.current.elements.reply_to.value = "";
+        form.current.elements.message.value = "";
     };
+
+    //! Old version
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+
+    //     console.log("test for the button")
+
+    //     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
+    //     .then((result) => {
+    //         console.log(result.text);
+    //         showSuccessToast();
+    //         form.current.reset()
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    // };
 
     return (
         <>
@@ -61,10 +84,10 @@ export default function Contact() {
         <h2 style={{color: "white"}}>Contact me! (This really works!)</h2>
         <form className="contact-section" ref={form}>
             <label style={{color: "white"}}>Name</label>
-            <input type="text" name="user_name" style={{textAlign: 'center', color: 'white', backgroundColor: 'grey', fontSize: "1.2rem", border: 'solid white 2px'}} />
+            <input type="text" name="from_name" style={{textAlign: 'center', color: 'white', backgroundColor: 'grey', fontSize: "1.2rem", border: 'solid white 2px'}} />
 
             <label style={{color: "white"}}>Email</label>
-            <input type="email" name="user_email" style={{textAlign: 'center', color: 'white', backgroundColor: 'grey', fontSize: "1.2rem", border: 'solid white 2px'}} />
+            <input type="email" name="reply_to" style={{textAlign: 'center', color: 'white', backgroundColor: 'grey', fontSize: "1.2rem", border: 'solid white 2px'}} />
 
             <label style={{color: "white"}}>Message</label>
             <textarea name="message" style={{color: 'white',backgroundColor: 'grey', border: 'solid white 2px'}} rows="10" cols="20" />
