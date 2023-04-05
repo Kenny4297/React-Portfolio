@@ -20,7 +20,7 @@ export default function Contact() {
     const [isDisabled, setIsDisabled] = useState(false);
 
     const handleDisable = () => {
-        //Here we check to see if the state of the button is disabled. If it is, then we disable it for 5 minuetes
+        //Here we check to see if the state of the button is disabled. If it is, then we disable it for 5 minutes
         if (!isDisabled) {
             setIsDisabled(true)
             setTimeout(() => {
@@ -31,7 +31,6 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-            //Stops the page from refreshing
 
         console.log("test for the button")
 

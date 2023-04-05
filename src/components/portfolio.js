@@ -27,9 +27,6 @@ export default function Portfolio() {
                 <div style={{textAlign: 'center', border: '2ps solid red'}}>
                     {/* Here we loop through the props located below this function.  */}
                     {workProps.map((individualWork, index) => (
-                        // We include the index (above) as a second parameter to know what specific project we are on for CSS purposes
-
-                        //We need to have the "key-{index}" here. It's a React thing, and it needs to keep track of multiple components when you render them out. 
                         <div className="box-shadow" style={{border: "6px dashed #4d4d4d", padding: '0px 20px',marginBottom: "30px"}} key={index}>
                             <div>
                                 <h3 style={{textAlign: 'center', color:'white', textDecoration: 'underline'}}>{individualWork.projectName}</h3>
