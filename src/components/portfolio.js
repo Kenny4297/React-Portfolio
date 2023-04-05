@@ -22,7 +22,7 @@ export default function Portfolio() {
     return (
         <>
         <Zoom>
-            <h2>Favorite Projects</h2>
+            <h2 style={{textDecoration: 'underline'}}>Favorite Projects</h2>
             <section  style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div style={{textAlign: 'center', border: '2ps solid red'}}>
                     {/* Here we loop through the props located below this function.  */}
@@ -41,7 +41,7 @@ export default function Portfolio() {
 
                                 {individualWork.projectResponsibilities && <p>{individualWork.projectResponsibilities}</p>}
 
-                                <p><a style={{color: 'black', fontWeight: 'bold'}} href={individualWork.githubLink} target='_blank' rel="noreferrer">Github</a></p>
+                                <p><a style={{color: 'black', fontWeight: 'bold'}} href={individualWork.githubLink} target='_blank' rel="noreferrer">GitHub</a></p>
 
                                 <p><a style={{color: 'black', fontWeight: 'bold'}} href={individualWork.deploymentLink} target='_blank' rel="noreferrer">Live Site</a></p>
                             </div>

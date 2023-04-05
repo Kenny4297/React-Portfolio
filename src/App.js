@@ -3,7 +3,7 @@ import AboutMe from './components/aboutMe';
 import './App.css';
 import Contact from './components/contact';
 import Portfolio from './components/portfolio';
-import Resume from './components/resume';
+import TechStack from './components/techStack';
 import Footer from './components/footer';
 import './index.css';
 import React, {useState, useEffect} from 'react';
@@ -70,8 +70,8 @@ function App() {
                             <li className={currentPage === 'contact' ? 'active' : ''}><Link to="/contact" onClick={() => {
                                 setCurrentPage('contact')}}>Contact</Link></li>
 
-                            <li className={currentPage === 'resume' ? 'active' : ''}><Link to="/resume" onClick={() => {
-                                setCurrentPage('resume')}}>Resume</Link></li>
+                            <li className={currentPage === 'TechStack' ? 'active' : ''}><Link to="/TechStack" onClick={() => {
+                                setCurrentPage('TechStacl')}}>Skills</Link></li>
                         </ul>
                     </nav>
                 </Fade>
@@ -83,7 +83,7 @@ function App() {
                 <Route path='/React-Portfolio/aboutMe' element={<AboutMe />}/>
                 <Route path='/React-Portfolio/portfolio' element={<Portfolio />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/resume' element={<Resume />} />
+                <Route path='/TechStack' element={<TechStack />} />
             </Routes>
 
             <Footer />
