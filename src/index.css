@@ -33,9 +33,39 @@ h1 {
   text-align: center;
 }
 
-nav a {
+/* nav a {
   color: var(--color-highlight);
   text-decoration: none;
+} */
+
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: lightskyblue;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 400ms ease-in-out;
+}
+
+nav a:hover:before {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+nav a:hover {
+    /* opacity: 0.7; */
+    color: lightskyblue;
 }
 
 nav {

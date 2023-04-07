@@ -61,17 +61,13 @@ function App() {
                     <nav>
                         <ul>
                             {/* We want to have the nav element be underlined when the user is on a certain page. We use the 'useState' hook to do this, since state is being changed! */}
-                            <li className={currentPage === 'aboutMe' ? 'active' : ''}><Link to='/React-Portfolio' onClick={() => {
-                                setCurrentPage('aboutMe')}}>About Me</Link></li>
+                            <li><Link to='/React-Portfolio'>About Me</Link></li>
 
-                            <li className={currentPage === 'portfolio' ? 'active' : ''}><Link to="/React-Portfolio/portfolio" onClick={() => {
-                                setCurrentPage('portfolio')}}>Portfolio</Link></li>
+                            <li><Link to="/React-Portfolio/portfolio">Projects</Link></li>
 
-                            <li className={currentPage === 'contact' ? 'active' : ''}><Link to="/contact" onClick={() => {
-                                setCurrentPage('contact')}}>Contact</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
 
-                            <li className={currentPage === 'TechStack' ? 'active' : ''}><Link to="/TechStack" onClick={() => {
-                                setCurrentPage('TechStacl')}}>Skills</Link></li>
+                            <li><Link to="/TechStack">Skills</Link></li>
                         </ul>
                     </nav>
                 </Fade>
